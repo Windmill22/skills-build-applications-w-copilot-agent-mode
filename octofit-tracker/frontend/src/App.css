@@ -1,0 +1,157 @@
+/* App.css for Octofit Tracker - custom Bootstrap overrides and enhancements */
+
+/* ── Global ─────────────────────────────────────────────────────────────── */
+body {
+  background: linear-gradient(135deg, #dce8f7 0%, #c9d9f0 100%);
+  color: #1a2e4a;
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ── Navigation ─────────────────────────────────────────────────────────── */
+.navbar {
+  background: linear-gradient(90deg, #1a2e4a 0%, #3a5bbf 100%) !important;
+  box-shadow: 0 3px 12px rgba(26, 46, 74, 0.25);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.2s;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ffc107 !important;
+}
+
+.navbar .nav-link {
+  color: #c8d9f5 !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Logo ────────────────────────────────────────────────────────────────── */
+.octofit-logo {
+  height: 42px;
+  width: auto;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+/* ── Headings ────────────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6,
+.card-title {
+  color: #1a2e4a;
+  font-weight: 700;
+}
+
+.display-4 {
+  color: #3a5bbf;
+}
+
+/* ── Cards ───────────────────────────────────────────────────────────────── */
+.card {
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.card-body {
+  padding: 1.75rem;
+}
+
+/* ── Tables ──────────────────────────────────────────────────────────────── */
+.table {
+  background: #ffffff;
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background: #1a2e4a;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  padding: 0.85rem 1rem;
+  letter-spacing: 0.3px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #e4ecf7;
+  transition: background 0.15s;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #f0f5fc;
+}
+
+.table-hover > tbody > tr:hover > * {
+  background-color: #dce8f7;
+  color: #1a2e4a;
+}
+
+.table td, .table th {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+.table-responsive {
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+.btn-primary,
+.btn {
+  background: linear-gradient(90deg, #3a5bbf 0%, #1a2e4a 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.45rem 1.2rem;
+  transition: background 0.25s, box-shadow 0.2s;
+}
+
+.btn-primary:hover,
+.btn:hover {
+  background: linear-gradient(90deg, #ffc107 0%, #3a5bbf 100%);
+  color: #1a2e4a;
+  box-shadow: 0 4px 14px rgba(58, 91, 191, 0.35);
+}
+
+/* ── Links ───────────────────────────────────────────────────────────────── */
+a:not(.nav-link):not(.navbar-brand) {
+  color: #3a5bbf;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:not(.nav-link):not(.navbar-brand):hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+/* ── Welcome page ────────────────────────────────────────────────────────── */
+.welcome-card {
+  max-width: 600px;
+  margin: 4rem auto;
+}
+
+.welcome-card .lead {
+  color: #3a5bbf;
+}
